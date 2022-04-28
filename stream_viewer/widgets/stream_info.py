@@ -44,7 +44,7 @@ class StreamStatusQMLWidget(QtWidgets.QWidget):
 
         self.view = QtQuick.QQuickView()
         self.view.statusChanged.connect(self.on_statusChanged)  # Error handler
-        self.view.setResizeMode(QtQuick.QQuickView.SizeRootObjectToView)
+        # self.view.setResizeMode(QtQuick.QQuickView.SizeRootObjectToView)
         engine = self.view.engine()
         context = engine.rootContext()
         context.setContextProperty("MyModel", self.model)
