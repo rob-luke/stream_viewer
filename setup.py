@@ -31,7 +31,7 @@ setuptools.setup(
         'stream_viewer': ['qml/streamInfoListView.qml'],
     },
     install_requires=['qtpy', 'pandas', 'pylsl', 'vispy', 'pyqtgraph', 'matplotlib', 'visbrain'],
-    extras_require={'PYQT': ["pyqt5"], 'PYSIDE': ["PySide2"]},
+    extras_require={'PYQT': ["pyqt6"], 'PYSIDE': ["PySide6"]},
     entry_points={'gui_scripts': ['lsl_viewer=stream_viewer.applications.main:main',
                                   'lsl_status=stream_viewer.applications.stream_status_qml:main',
                                   'lsl_switching_viewer=stream_viewer.applications.lsl_switching:main'],
