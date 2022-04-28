@@ -1,6 +1,9 @@
 import setuptools
 import os
 
+import os
+os.environ["QT_API"] = "pyqt6"
+
 
 # Get the long description from the relevant file
 here = os.path.abspath(os.path.dirname(__file__))
@@ -30,7 +33,7 @@ setuptools.setup(
     package_data={
         'stream_viewer': ['qml/streamInfoListView.qml'],
     },
-    install_requires=['qtpy', 'pandas', 'pylsl', 'vispy', 'pyqtgraph', 'matplotlib', 'visbrain'],
+    install_requires=['qtpy', 'pandas', 'pylsl', 'vispy', 'pyqtgraph', 'matplotlib'],
     extras_require={'PYQT': ["pyqt6"], 'PYSIDE': ["PySide6"]},
     entry_points={'gui_scripts': ['lsl_viewer=stream_viewer.applications.main:main',
                                   'lsl_status=stream_viewer.applications.stream_status_qml:main',

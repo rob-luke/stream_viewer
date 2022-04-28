@@ -4,6 +4,5 @@ PyOpenGL
 qtpy
 PySide6
 vispy
-visbrain
 pylsl
 pyqtgraph
